@@ -91,4 +91,30 @@ function EJ6()
    console.log(MostrarTorreAsteriscos());
 }
 
-EJ6();
+
+
+function EJ7()
+{
+    PedirNombres();
+}
+
+
+
+function EJ8()
+{
+    ReemplazarPalabras();
+}
+
+
+
+function EJ9()
+{
+    CortarTexto();
+}
+
+function Ej10()
+{
+    StringConSeparador();
+}
+
+Ej10();
