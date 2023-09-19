@@ -39,11 +39,24 @@ return nuevoArray;
 
 function MostrarTorreAsteriscos()
 {
-   
- 
-
-    return mensaje;
+        for(let i=0; i<5; i++){
+    
+    
+            for(let e = 5-1-i; e>0; e--){
+                console.log("-");
+            }
+           
+            for(let e = 0; e<i+1; e++){
+                console.log("*");
+            }
+           
+            for(let e = 5-1-i; e>0; e--){
+                console.log("-");
+            }
+        }
 }
+
+
 
 
 function PedirNombres()
@@ -80,3 +93,32 @@ function StringConSeparador()
  return console.log(txt2);
 }
 
+function calculadoraRecaudacion()
+{
+    let recaudacionTotal = 0;
+
+const inputPedidos = prompt("Ingrese los pedidos en el formato 'nombre:precio' separados por coma (,):");
+
+
+const pedidos = inputPedidos.split(',');
+
+
+for (let i = 0; i < pedidos.length; i++) {
+   
+    const pedido = pedidos[i].trim().split(':');
+    if (pedido.length === 2) {
+        const nombre = pedido[0].trim();
+        const precio = parseFloat(pedido[1].trim());
+        if (!isNaN(precio)) {
+            recaudacionTotal += precio;
+        } else {
+            console.log(`El precio del pedido '${pedidos[i]}' no es válido.`);
+        }
+    } else {
+        console.log(`El formato del pedido '${pedidos[i]}' no es válido.`);
+    }
+}
+
+console.log(`La recaudación total es: ${recaudacionTotal}`);
+
+}

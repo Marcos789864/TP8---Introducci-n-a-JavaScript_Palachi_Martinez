@@ -6,8 +6,6 @@ function EJ1()
     return console.log(`Hola ${nombre}, tienes ${edad} años!`);
 }
 
-
-
 function EJ2()
 {
     const Frutas = [
@@ -54,7 +52,6 @@ function EJ2()
     }
 }
 
-
 function EJ3()
 {
     let variable = (10 == 10);
@@ -65,8 +62,6 @@ function EJ3()
     
     console.log(`${variable}, ${verificar}, ${tipoDato}, ${booleano}`);
 }
-
-
 
 function EJ4()
 {
@@ -91,21 +86,16 @@ function EJ6()
    console.log(MostrarTorreAsteriscos());
 }
 
-
-
 function EJ7()
 {
     PedirNombres();
 }
 
 
-
 function EJ8()
 {
     ReemplazarPalabras();
 }
-
-
 
 function EJ9()
 {
@@ -117,4 +107,8 @@ function Ej10()
     StringConSeparador();
 }
 
-Ej10();
+function EJ11()
+{
+calculadoraRecaudacion();
+}
+
